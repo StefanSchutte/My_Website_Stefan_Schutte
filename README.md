@@ -12,6 +12,8 @@ Welcome to my personal website! This website serves as a portfolio and online pr
 - [Navigation](#navigation)
 - [Technologies Used](#technologies-used)
 
+## Deployed Site
+[Deployed Site](https://my-website-stefan-schutte.netlify.app/)
 
 ## Introduction
 
