@@ -36,56 +36,56 @@ const projects = ref([
 
   {
     title: 'My Digital Resume',
-    image: '../../public/Capture.png',
+    image: '/public/Capture.png',
     githubLink: 'https://github.com/StefanSchutte/STESCH302_FTO2308_GroupC_Stefan-Schutte_ITW_Final_Digital_Resume',
     netlifyLink: 'https://stefanschutte-digital-resume.netlify.app/',
     description: 'My Digital Resume created using HTML and CSS.'
   },
   {
     title: 'Podcast App',
-    image: '../../public/podcastimg.png',
+    image: '/public/podcastimg.png',
     githubLink: 'https://github.com/StefanSchutte/STESCH302_FTO2308_GroupA2_Stefan-Schutte_DWACapstone',
     netlifyLink: 'https://podcasted-podcast-app.netlify.app/',
     description: 'A podcast app that allows users to browse various podcasts shows, play episodes and track their favorite episodes.'
   },
   {
     title: 'Book Connect',
-    image: '../../public/bookconnect.png',
+    image: '/public/bookconnect.png',
     githubLink: 'https://github.com/StefanSchutte/STESCH302_FTO2308_GroupB2_Stefan_Schutte_IWACapstone',
     netlifyLink: 'https://bookconnect-app-js.netlify.app/',
     description: 'Interactive Web App where I applied JavaScript to achieve required functionality.'
   },
   {
     title: 'Calculator App',
-    image: '../../public/Capture4.png',
+    image: '/public/Capture4.png',
     githubLink: 'https://github.com/StefanSchutte/Calculator',
     netlifyLink: 'https://project1.netlify.app',
     description: 'Calculator created with JS.'
   },
   {
     title: 'Mapty App',
-    image: '../../public/Capture2.png',
+    image: '/public/Capture2.png',
     githubLink: 'https://github.com/StefanSchutte/Mapty',
     netlifyLink: 'https://mapty-stafan.netlify.app/',
     description: 'An app that tracks a users running/cycling activities.'
   },
   {
     title: 'Bankist',
-    image: '../../public/Capture3.png',
+    image: '/public/Capture3.png',
     githubLink: 'https://github.com/StefanSchutte/Bankist_app',
     netlifyLink: 'https://bankist-dom-stefan.netlify.app/',
     description: 'This project is a minimalist banking website called Bankist. It is a static website created using HTML, CSS, and JavaScript. The website showcases various sections, including features, operations, testimonials, and a sign-up section.'
   },
   {
     title: 'Bookmark App',
-    image: '../../public/Capture5.png',
+    image: '/public/Capture5.png',
     githubLink: 'https://github.com/StefanSchutte/Bookkeeper_Application',
     netlifyLink: 'https://bookmark-app-stefan.netlify.app/',
     description: 'Bookmark App is a simple web application that allows users to manage and save bookmarks for their favorite websites. Users can add, delete, and visit bookmarks with ease. '
   },
   {
     title: 'Paint Clone',
-    image: '../../public/paint.png',
+    image: '/public/paint.png',
     githubLink: 'https://github.com/StefanSchutte/Paint_Clone',
     netlifyLink: 'https://paint-clone-stefan.netlify.app/',
     description: 'A simple web-based painting application that allows users to draw, erase, change brush sizes, and manipulate colors. The application provides features such as saving and loading the canvas from local storage, clearing the canvas, and downloading the created artwork as an image file.'
