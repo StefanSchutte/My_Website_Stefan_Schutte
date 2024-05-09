@@ -52,6 +52,11 @@
   align-items: center; /* Align items vertically */
 }
 
+.experienceHeadingContainer p {
+  margin-left: 3rem;
+  color: rgb(127, 131, 127);
+}
+
 .experience_info {
   margin: 2rem;
 }
