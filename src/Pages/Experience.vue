@@ -31,12 +31,19 @@
 
 .experienceHeading {
   font-size: large;
-  color: rgb(107, 186, 107);
   cursor: pointer; /* Add cursor pointer for better UX */
+  color: #8f8c8c;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: 1px solid #28b128;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 .experienceHeading:hover {
   transform: scale(1.40);
   color: #075c07;
+  border: 1px solid #525952;
 }
 
 .experienceDate {
@@ -140,14 +147,18 @@ const experiences = ref([
     date: "April 2016 - November 2017",
     title: "General Foreman",
     place: "Cristoffel Loock Boerdery",
-    description: "- Courageous Cats / UFF / Old Mutal Agri-investment Farms.\n" +
-        "- Quality control manager.\n" +
-        "- Fruit quality standards fulfillment. \n" +
-        "- Monitoring samples. \n" +
-        "- Databases to combat claims from buyers and exporters. \n" +
-        "- Assisting Line manager with pack machine and operations.\n" +
-        "- Logistic databases on daily pack out. \n" +
-        "- Daily quality report.",
+    description: "- General foreman.\n" +
+        "- General farm operations and activities. \n" +
+        "- Repairing motorized vehicles and implements.\n" +
+        "- Repairing pipes and electrical lines. \n" +
+        "- Roof construction, painting. \n" +
+        "- Planting of grains. \n" +
+        "- Pruning supervision. \n" +
+        "- Conveyance of new orchards and irrigation system. \n" +
+        "- Livestock and wild life animals. \n" +
+        "- Hunting activities. \n" +
+        "- Co-managed the pack house. \n" +
+        "- Labelling, packing, quality, production and operations.",
     show: false
   },
 
