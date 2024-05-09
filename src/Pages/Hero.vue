@@ -9,7 +9,7 @@
     <div>
       <header>
         <h1 class="text-red-700">Stefan Schutte</h1>
-        <p>My Digital Resumé: My Personal Website.</p>
+        <p>My Website.</p>
       </header>
     </div>
   </aside>
@@ -48,7 +48,6 @@ h1 {
 
 header p {
   font-size: 3vh;
-  font-family: "Shadows into light", sans-serif;
   color: rgb(66, 66, 66);
 }
 
