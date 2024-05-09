@@ -11,7 +11,7 @@
         </h3>
         </div>
         <p v-show="experience.show">
-          {{ experience.description }}
+          <div v-for="item in experience.description.split('\n')" :key="item">{{ item }}</div>
         </p>
       </div>
     </div>
@@ -53,6 +53,17 @@
 .experience_info {
   margin: 2rem;
 }
+
+.experienceList {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.experienceList li {
+  margin-bottom: 10px; /* Add spacing between list items */
+  border-bottom: 1px solid #ccc; /* Add a border between list items */
+  padding-bottom: 10px; /* Add padding to the bottom of each list item */
+}
 </style>
 
 <script setup lang="ts">
@@ -63,40 +74,67 @@ const experiences = ref([
   {
     date: "June 2021 - July 2023",
     title: "Talking Club Academy",
-    description: "I taught English to elementary school students. A rigid syllabus was followed. I also had administrative responsibilities and report cards.",
+    description: "- English elementary school students teacher. \n" +
+        "- Rigid syllabus. \n" +
+        "- Administrative responsibilities. \n" +
+        "- Report cards.",
     show: false
   },
 
   {
     date: "April 2020 - May 2021",
     title: "Sunday's River Citrus Company",
-    description: "My responsibilities as Program Specification Specialist included utilizing CMS system to ensure specifications and volume as required by the markets are adhere to. I executed packing programs and ensured that role players are informed of status of packing and facilitated time effective change-overs.",
+    description: "- Utilizing CMS system.\n" +
+        "- Ensure compliance with market specifications and volume requirements.\n" +
+        "- Executed packing programs.\n" +
+        "- Inform role-players of status of packing.\n" +
+        "- Facilitated time effective change-overs.",
     show: false
   },
 
   {
     date: "October 2018 - October 2019",
     title: "EBY Talking Cub",
-    description: "I taught English for elementary, middle school and adult students at E Bo Young Talking Club in Yeosu, South Korea. My responsibilities included teaching. administrative duties, report cards and the listening parts of Toefl.",
+    description: "- English teacher for elementary, middle school and adult students. \n" +
+        "- Teaching. \n" +
+        "- Administrative duties. \n" +
+        "- Report cards.",
     show: false
   },
 
   {
     date: "April - October 2018",
     title: "FQMS, Tru-Cape, & SRCC",
-    description: "My responsibilities as an inspector for FQMS included checking quality of fruit in pack houses throughout the Langkloof area for Tru-Cape, reports and databases on inspections. I also worked in the Kirkwood and Addo area, where my responsibilities were auditing the program specifications for SRCC.",
+    description: "- Fruit Quality Inspector/Auditor. \n" +
+        "- Quality inspection of fruit in pack houses throughout the Langkloof area for Tru-Cape. \n" +
+        "- Reports and databases on inspections. \n" +
+        "- Auditing the program specifications for SRCC.",
     show: false
   },
   {
     date: "November 2017 - April 2018",
     title: "Hochland/Courageous Cat",
-    description: "Courageous Cats is a fund which together with UFF / Old Mutal Agri-investment and other investors own the farms. My duties as Quality control manager included fruit quality standards fulfillment, monitoring samples, creating databases to combat claims from buyers and exporters, assisting the line manager with pack machine and operations, and logistic databases on daily pack out. I also did a quality report daily.",
+    description: "- Courageous Cats / UFF / Old Mutal Agri-investment Farms.\n" +
+        "- Quality control manager.\n" +
+        "- Fruit quality standards fulfillment. \n" +
+        "- Monitoring samples. \n" +
+        "- Databases to combat claims from buyers and exporters. \n" +
+        "- Assisting Line manager with pack machine and operations.\n" +
+        "- Logistic databases on daily pack out. \n" +
+        "- Daily quality report.",
     show: false
   },
   {
     date: "April 2016 - November 2017",
     title: "Cristoffel Loock Boerdery",
-    description: "Appointed as general foreman, I were responsible for general farm operations and activities. Experience were attained in repairing motorized vehicles and implements, repairing pipes and electrical lines, roof construction, painting, planting of grains and pruning supervision. I helped with the conveyance of new orchards and irrigation system. I worked with the livestock and wild life animals.  I also helped with hunting activities offered on the farm. During packing season I co-managed the pack house. Responsibilities included labelling, packing, quality, production and operations.",
+    description: "- Courageous Cats / UFF / Old Mutal Agri-investment Farms.\n" +
+        "- Quality control manager.\n" +
+        "- Fruit quality standards fulfillment. \n" +
+        "- Monitoring samples. \n" +
+        "- Databases to combat claims from buyers and exporters. \n" +
+        "- Assisting Line manager with pack machine and operations.\n" +
+        "- Logistic databases on daily pack out. \n" +
+        "- Daily quality report.",
     show: false
   },
 
