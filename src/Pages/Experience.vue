@@ -5,15 +5,18 @@
     <div class="experience_info">
       <div v-for="(experience, index) in experiences" :key="index">
         <div class="experienceHeadingContainer">
-        <h4 class="experienceDate"> {{experience.date}} </h4>
+
         <h3 class="experienceHeading" @click="toggleParagraph(index)">
           {{ experience.title }}
-        </h3>
           <p>{{experience.place}}</p>
+          <p class="experienceDate">{{experience.date}}</p>
+        </h3>
+
         </div>
 
         <p v-show="experience.show">
           <div v-for="item in experience.description.split('\n')" :key="item">{{ item }}</div>
+          <div class="exp-skill">{{experience.skills}}</div>
         </p>
       </div>
     </div>
@@ -35,13 +38,13 @@
   color: #8f8c8c;
   margin-right: 10px;
   padding: 8px 16px;
-  border: 1px solid #28b128;
+  border: 1px solid #8f8c8c;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 .experienceHeading:hover {
-  transform: scale(1.40);
+  transform: scale(1.01);
   color: #075c07;
   border: 1px solid #525952;
 }
@@ -49,23 +52,24 @@
 .experienceDate {
   font-size: medium;
   color: rgb(127, 131, 127);
-  margin-top: 30px;
-  margin-right: 3rem;
 
 }
 
 .experienceHeadingContainer {
-  display: flex;
+
   align-items: center; /* Align items vertically */
 }
 
 .experienceHeadingContainer p {
-  margin-left: 3rem;
+  margin-left: 0rem;
   color: rgb(127, 131, 127);
 }
 
 .experience_info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 2rem;
+  align-items: center; /* Align items vertically */
 }
 
 .experienceList {
@@ -77,6 +81,19 @@
   margin-bottom: 10px; /* Add spacing between list items */
   border-bottom: 1px solid #ccc; /* Add a border between list items */
   padding-bottom: 10px; /* Add padding to the bottom of each list item */
+}
+
+.exp-skill {
+  margin: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .experience_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
 </style>
 
@@ -93,6 +110,7 @@ const experiences = ref([
         "- Rigid syllabus. \n" +
         "- Administrative responsibilities. \n" +
         "- Report cards.",
+    skills: "Skills: Teaching English as a Foreign Language · Teacher Training · Teaching · Language Teaching · Computer Literacy · Communication · Problem Solving · Adaptability · Attention to Detail · Organization Skills · Microsoft Word · Microsoft Excel",
     show: false
   },
 
@@ -105,6 +123,7 @@ const experiences = ref([
         "- Executed packing programs.\n" +
         "- Inform role-players of status of packing.\n" +
         "- Facilitated time effective change-overs.",
+    skills: "Skills: CMS · Communication · Computer Literacy · Local Area Network (LAN) · Analytical Skills · Instructional Skills · Problem Solving · Soft Skills · Microsoft Office · Microsoft Word · Microsoft Excel · Microsoft Outlook",
     show: false
   },
 
@@ -116,6 +135,7 @@ const experiences = ref([
         "- Teaching. \n" +
         "- Administrative duties. \n" +
         "- Report cards.",
+    skills: "Skills: English · Teaching English as a Foreign Language · Language Teaching · Microsoft Excel · Microsoft Word · Administration · Writing",
     show: false
   },
 
@@ -127,6 +147,7 @@ const experiences = ref([
         "- Quality inspection of fruit in pack houses throughout the Langkloof area for Tru-Cape. \n" +
         "- Reports and databases on inspections. \n" +
         "- Auditing the program specifications for SRCC.",
+    skills: "Quality Assurance · Quality Control · Quality System · Quality Auditing · Microsoft Excel · Microsoft Office · Cloud Storage · Communication",
     show: false
   },
   {
@@ -141,6 +162,7 @@ const experiences = ref([
         "- Assisting Line manager with pack machine and operations.\n" +
         "- Logistic databases on daily pack out. \n" +
         "- Daily quality report.",
+    skills: "Skills: Microsoft Office · Microsoft Excel · Microsoft Word · Quality Assurance · Quality Control · Logistics · Cloud Storage · Quality System · Import/Export Operations",
     show: false
   },
   {
@@ -159,17 +181,9 @@ const experiences = ref([
         "- Hunting activities. \n" +
         "- Co-managed the pack house. \n" +
         "- Labelling, packing, quality, production and operations.",
+    skills: "Skills: Time Management · Team Management · Teamwork · Construction · Mechanical, Electrical, and Plumbing (MEP) · Hunting · Import/Export Operations",
     show: false
   },
-
-  {
-    date: "January - April 2016",
-    title: "Delivery Services",
-    place: "Marketing Department, University of the Free State",
-    description: "I assisted a quality control inspector for Tru-Cape with inspection of quality on various apples and pears. The inspections focused on cosmetic and progressive traits of the fruit. Quality assesments in Hortgro's FEMA project were done as well.",
-    show: false
-  },
-  // Add other experience objects similarly
 ]);
 
 const toggleParagraph = (index: number) => {

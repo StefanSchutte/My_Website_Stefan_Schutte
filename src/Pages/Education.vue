@@ -50,13 +50,21 @@ const toggleParagraph = (index: any) => {
 
 .educationHeading {
   font-size: large;
-  color: rgb(198, 198, 146);
   cursor: pointer;
+  color: #8f8c8c;
+  margin-right: 10px;
+  padding: 8px 16px;
+  border: 1px solid #8f8c8c;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
 .educationHeading:hover {
-  transform: scale(1.30);
+  transform: scale(1.10);
   color: #075c07;
+  color: #075c07;
+  transition: background-color 0.3s ease;
 }
 
 .education {
