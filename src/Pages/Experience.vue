@@ -9,7 +9,9 @@
         <h3 class="experienceHeading" @click="toggleParagraph(index)">
           {{ experience.title }}
         </h3>
+          <p>{{experience.place}}</p>
         </div>
+
         <p v-show="experience.show">
           <div v-for="item in experience.description.split('\n')" :key="item">{{ item }}</div>
         </p>
@@ -73,7 +75,8 @@ const experiences = ref([
 
   {
     date: "June 2021 - July 2023",
-    title: "Talking Club Academy",
+    title: "Teacher",
+    place: "Talking Club Academy",
     description: "- English elementary school students teacher. \n" +
         "- Rigid syllabus. \n" +
         "- Administrative responsibilities. \n" +
@@ -83,7 +86,8 @@ const experiences = ref([
 
   {
     date: "April 2020 - May 2021",
-    title: "Sunday's River Citrus Company",
+    title: "Program Specialist",
+    place: "Sunday's River Citrus Company",
     description: "- Utilizing CMS system.\n" +
         "- Ensure compliance with market specifications and volume requirements.\n" +
         "- Executed packing programs.\n" +
@@ -94,7 +98,8 @@ const experiences = ref([
 
   {
     date: "October 2018 - October 2019",
-    title: "EBY Talking Cub",
+    title: "Teacher",
+    place: "EBY Talking Cub",
     description: "- English teacher for elementary, middle school and adult students. \n" +
         "- Teaching. \n" +
         "- Administrative duties. \n" +
@@ -104,7 +109,8 @@ const experiences = ref([
 
   {
     date: "April - October 2018",
-    title: "FQMS, Tru-Cape, & SRCC",
+    title: "Quality Assurance Specialist",
+    place: "FQMS, Tru-Cape, & SRCC",
     description: "- Fruit Quality Inspector/Auditor. \n" +
         "- Quality inspection of fruit in pack houses throughout the Langkloof area for Tru-Cape. \n" +
         "- Reports and databases on inspections. \n" +
@@ -113,7 +119,8 @@ const experiences = ref([
   },
   {
     date: "November 2017 - April 2018",
-    title: "Hochland/Courageous Cat",
+    title: "Quality Assurance Manager",
+    place: "Hochland/Courageous Cat",
     description: "- Courageous Cats / UFF / Old Mutal Agri-investment Farms.\n" +
         "- Quality control manager.\n" +
         "- Fruit quality standards fulfillment. \n" +
@@ -126,7 +133,8 @@ const experiences = ref([
   },
   {
     date: "April 2016 - November 2017",
-    title: "Cristoffel Loock Boerdery",
+    title: "General Foreman",
+    place: "Cristoffel Loock Boerdery",
     description: "- Courageous Cats / UFF / Old Mutal Agri-investment Farms.\n" +
         "- Quality control manager.\n" +
         "- Fruit quality standards fulfillment. \n" +
@@ -140,7 +148,8 @@ const experiences = ref([
 
   {
     date: "January - April 2016",
-    title: "FQMS & Hortgro's FEMA Project",
+    title: "Delivery Services",
+    place: "Marketing Department, University of the Free State",
     description: "I assisted a quality control inspector for Tru-Cape with inspection of quality on various apples and pears. The inspections focused on cosmetic and progressive traits of the fruit. Quality assesments in Hortgro's FEMA project were done as well.",
     show: false
   },
