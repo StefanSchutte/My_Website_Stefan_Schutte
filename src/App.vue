@@ -9,7 +9,7 @@ import Foot from "./Pages/Foot.vue";
   <body>
   <Nav />
   <router-view></router-view>
-  <Foot />
+<!--  <Foot />-->
   </body>
 </template>
 

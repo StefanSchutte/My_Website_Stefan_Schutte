@@ -1,4 +1,5 @@
 <template>
+  <div>
   <aside>
     <div class="img">
       <picture >
@@ -13,8 +14,20 @@
       </header>
     </div>
   </aside>
+  <Foot />
+  </div>
 </template>
 
+<script>
+import Foot from './Foot.vue'
+import {defineComponent} from "vue";
+
+
+export default defineComponent({
+  components: {Foot}
+})
+
+</script>
 <style>
 
 
