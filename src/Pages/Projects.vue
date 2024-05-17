@@ -25,12 +25,14 @@
         <button @click="hideOverlay">Close</button>
       </div>
     </div>
+    <SingleProject/>
   </div>
 </template>
 
 
 <script setup>
 import { ref, onMounted } from 'vue';
+import SingleProject from "../Components/SingleProject.vue";
 
 const projects = ref([
 
