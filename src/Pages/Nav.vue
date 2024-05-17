@@ -7,7 +7,7 @@
       <router-link to="/experience"><div class="nav-item"><img src="../../public/portfolio.png" alt="Experience" title="Experience"/>Experience</div></router-link>
       <router-link to="/projects"><div class="nav-item"><img src="../../public/project.png" alt="Projects" title="Projects"/>Projects</div></router-link>
       <router-link to="/skills"><div class="nav-item"><img src="../../public/skills.png" alt="Skills" title="Skills"/>Skills</div></router-link>
-      <router-link to="/stefan"><div class="nav-item"><img src="../../public/user.png" alt="user" title="Stefan"/>Stefan</div></router-link>
+      <router-link to="/stefan"><div class="nav-item"><img src="../../public/user.png" alt="user" title="Stefan"/>Contact Me</div></router-link>
     </ul>
   </nav>
 </template>

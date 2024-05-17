@@ -72,24 +72,34 @@
 h1 {
   color: white;
   padding: 1rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
 }
-
-
 
  .footerContainer {
    text-align: center;
  }
 
 .footer {
-  background-color: rgb(69, 64, 64);
   margin-bottom: 0;
+  padding: 2rem 0;
 }
 
 .contactDetailSection {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 .contact img {
@@ -121,7 +131,15 @@ span {
   font-size: large;
 }
 
+@media only screen and (max-width: 1000px) {
 
+  .contactDetailSection {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 </style>
 <script setup lang="ts">

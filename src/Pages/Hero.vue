@@ -10,7 +10,6 @@
     <div>
       <header>
         <h1 class="text-red-700">Stefan Schutte</h1>
-        <p>My Website.</p>
       </header>
     </div>
   </aside>
