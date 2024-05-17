@@ -1,4 +1,5 @@
 <template>
+  <AboutMeSection/>
 <h2 id="skills">SKILLS</h2>
 
 <ul class="skills-grid">
@@ -21,6 +22,7 @@
 </ul>
 </template>
 <script setup lang="ts">
+import AboutMeSection from "./AboutMeSection.vue";
 </script>
 
 <style>

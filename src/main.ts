@@ -9,11 +9,23 @@ import Projects from './Pages/Projects.vue'
 import Skills from './Pages/Skills.vue'
 import Hero from "./Pages/Hero.vue";
 import Stefan from "./Pages/Stefan.vue";
+import AboutMeSection from "./Pages/AboutMeSection.vue";
 
 const routes = [
     { path: '/', redirect: '/home' },
     { path: '/home', component: Hero },
-    { path: '/about', component: About },
+    { path: '/about', component: About},
+    {
+        path: '/aboutMeSection',
+        component: AboutMeSection,
+        children: [
+            { path: '', redirect: 'about' },  // Default to 'about' within this section
+            { path: 'about', component: About },
+            { path: 'education', component: Education },
+            { path: 'experience', component: Experience },
+            { path: 'skills', component: Skills }
+        ]
+    },
     { path: '/education', component: Education },
     { path: '/experience', component: Experience },
     { path: '/projects', component: Projects },

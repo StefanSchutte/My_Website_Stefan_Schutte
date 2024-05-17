@@ -1,4 +1,6 @@
 <template>
+  <AboutMeSection />
+
   <h2 class="about">ABOUT</h2>
   <div class="about_info">
     <p>"As an enthusiastic and dedicated entry-level Software Developer, I bring a unique blend of academic excellence,
@@ -27,10 +29,13 @@
 }
 
 .about_info {
-  margin: 2rem;
+  margin:2rem;
   margin-bottom: 5rem;
   font-family: "Mukta", sans-serif;
-  font-size: medium;
+  font-size: large;
 }
 
 </style>
+<script setup lang="ts">
+import AboutMeSection from "./AboutMeSection.vue";
+</script>

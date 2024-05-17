@@ -1,4 +1,5 @@
 <template>
+  <AboutMeSection/>
   <div>
     <h2 id="education">EDUCATION</h2>
     <ul class="education">
@@ -16,6 +17,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import AboutMeSection from "./AboutMeSection.vue";
 
 const educations = ref([
   { title: 'Software Development/Web Development.',grad:'Certificate', date: '2024', location: 'CodeSpace Academy.', show: false },

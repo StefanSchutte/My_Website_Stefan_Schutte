@@ -26,6 +26,7 @@
       </div>
     </div>
     <SingleProject/>
+
   </div>
 </template>
 

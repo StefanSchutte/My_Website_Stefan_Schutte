@@ -1,5 +1,6 @@
 
 <template>
+  <AboutMeSection/>
   <div>
     <h2 id="experience">EXPERIENCE</h2>
     <div class="experience_info">
@@ -99,6 +100,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import AboutMeSection from "./AboutMeSection.vue";
 
 const experiences = ref([
 

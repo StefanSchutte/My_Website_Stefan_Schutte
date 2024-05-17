@@ -2,11 +2,11 @@
   <nav>
     <ul class="nav">
       <router-link to="/home"><div class="nav-item"><img src="../../public/home.png" alt="Home" title="Home"/>Home</div></router-link>
-      <router-link to="/about"><div class="nav-item"><img src="../../public/information-button.png" alt="About" title="About"/>About</div></router-link>
-      <router-link to="/education"><div class="nav-item"><img src="../../public/graduation.png" alt="Education" title="Education"/>Education</div></router-link>
-      <router-link to="/experience"><div class="nav-item"><img src="../../public/portfolio.png" alt="Experience" title="Experience"/>Experience</div></router-link>
+      <router-link to="/aboutMeSection"><div class="nav-item"><img src="../../public/curriculum-vitae.png" alt="About" title="About"/>Resume</div></router-link>
+<!--      <router-link to="/education"><div class="nav-item"><img src="../../public/graduation.png" alt="Education" title="Education"/>Education</div></router-link>-->
+<!--      <router-link to="/experience"><div class="nav-item"><img src="../../public/portfolio.png" alt="Experience" title="Experience"/>Experience</div></router-link>-->
       <router-link to="/projects"><div class="nav-item"><img src="../../public/project.png" alt="Projects" title="Projects"/>Projects</div></router-link>
-      <router-link to="/skills"><div class="nav-item"><img src="../../public/skills.png" alt="Skills" title="Skills"/>Skills</div></router-link>
+<!--      <router-link to="/skills"><div class="nav-item"><img src="../../public/skills.png" alt="Skills" title="Skills"/>Skills</div></router-link>-->
       <router-link to="/stefan"><div class="nav-item"><img src="../../public/user.png" alt="user" title="Stefan"/>Contact Me</div></router-link>
     </ul>
   </nav>
